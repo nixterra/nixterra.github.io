@@ -26,9 +26,9 @@ I'm a data analyst passionate about turning raw data into actionable insights. I
 
 ## 📫 Contact Me
 
-- 📧 Email: [tokmann.nina@gmail.com]
-- 🧠 GitHub: [https://github.com/nixterra]([https://github.com/yourusername](https://github.com/nixterra))
-- 💼 LinkedIn: [link](https://www.linkedin.com/in/nina-tkmnn/)
+- 📧 [Get in touch](mailto:tokmann.nina@gmail.com)
+- 🧠 [Visit my GitHub]([https://github.com/yourusername](https://github.com/nixterra))
+- 💼 [Connect on LinkedIn](https://www.linkedin.com/in/nina-tkmnn/)
 
 
 ---
