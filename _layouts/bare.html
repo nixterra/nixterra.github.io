@@ -1,38 +1,45 @@
-<head>
-  <meta charset="UTF-8">
-  <title>{{ page.title }}</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    body {
-      max-width: 700px;
-      margin: 2em auto;
-      font-family: system-ui, sans-serif;
-      padding: 0 1em;
-      line-height: 1.6;
-      color: #111;
-      background: #fff;
-    }
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>{{ page.title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      body {
+        max-width: 700px;
+        margin: 2em auto;
+        font-family: system-ui, sans-serif;
+        padding: 0 1em;
+        line-height: 1.6;
+        color: #111;
+        background: #fff;
+      }
 
-    a {
-      color: #007acc;
-      text-decoration: none;
-    }
+      a {
+        color: #007acc;
+        text-decoration: none;
+      }
 
-    a:hover {
-      text-decoration: underline;
-    }
+      a:hover {
+        text-decoration: underline;
+      }
 
-    h1, h2, h3 {
-      margin-top: 1.5em;
-    }
+      h1, h2, h3 {
+        margin-top: 1.5em;
+      }
 
-    img {
-      max-width: 100%;
-      height: auto;
-    }
+      img {
+        max-width: 100%;
+        height: auto;
+      }
 
-    hr {
-      margin: 2em 0;
-    }
-  </style>
-</head>
+      hr {
+        margin: 2em 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    {{ content }}
+  </body>
+</html>
