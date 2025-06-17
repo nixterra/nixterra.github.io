@@ -55,7 +55,7 @@
   margin-bottom: 1em;
 }
 
-.theme-switch {
+theme-switch {
   position: relative;
   display: inline-block;
   width: 60px;
@@ -71,7 +71,7 @@
   left: 3px;
   width: 24px;
   height: 24px;
-  background: #fff;
+  background: transparent; 
   border-radius: 50%;
   transition: transform 0.3s, background 0.3s;
   display: flex;
@@ -85,29 +85,22 @@
   transform: translateX(30px);
 }
 
-/* Toggle the emoji based on theme */
-.theme-switch .emoji {
-  transition: 0.3s;
-}
-
-/* Light mode emoji */
-[data-theme="light"] .emoji::before {
+.switch.emoji::before {
   content: "☀️";
+  transition: content 0.3s;
 }
 
-/* Dark mode emoji */
-[data-theme="dark"] .emoji::before {
+/* Switch to moon in dark mode */
+[data-theme="dark"] .switch.emoji::before {
   content: "🌙";
 }
 </style>
   </head>
   <body>
-    <div class="theme-switch-wrapper">
+   <div class="theme-switch-wrapper">
   <input type="checkbox" id="theme-toggle" hidden />
   <label for="theme-toggle" class="theme-switch">
-    <span class="switch">
-      <span class="emoji">🌞</span>
-    </span>
+    <span class="switch emoji"></span>
   </label>
 </div>
     {{ content }}
