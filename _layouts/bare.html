@@ -51,48 +51,44 @@
 
 .theme-switch-wrapper {
   display: flex;
-  justify-content: flex-end;
-  margin-bottom: 1em;
+  justify-content: center;
+  margin: 2em;
 }
 
-theme-switch {
+.theme-switch {
   position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 30px;
-  background: #333;
-  border-radius: 30px;
+  width: 70px;
+  height: 36px;
+  background: #eee;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 8px;
   cursor: pointer;
+  font-size: 18px;
+  box-sizing: border-box;
 }
 
-.theme-switch .switch {
+.theme-switch .icon {
+  z-index: 1;
+}
+
+.theme-switch .switch-knob {
   position: absolute;
   top: 3px;
   left: 3px;
-  width: 24px;
-  height: 24px;
-  background: transparent; 
+  width: 30px;
+  height: 30px;
+  background: white;
   border-radius: 50%;
-  transition: transform 0.3s, background 0.3s;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 18px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
-/* Move toggle to the right when checked */
-#theme-toggle:checked + .theme-switch .switch {
-  transform: translateX(30px);
-}
-
-.switch.emoji::before {
-  content: "☀️";
-  transition: content 0.3s;
-}
-
-/* Switch to moon in dark mode */
-[data-theme="dark"] .switch.emoji::before {
-  content: "🌙";
+/* Move knob to the right when checked */
+#theme-toggle:checked + .theme-switch .switch-knob {
+  transform: translateX(34px);
 }
 </style>
   </head>
@@ -100,7 +96,9 @@ theme-switch {
    <div class="theme-switch-wrapper">
   <input type="checkbox" id="theme-toggle" hidden />
   <label for="theme-toggle" class="theme-switch">
-    <span class="switch emoji"></span>
+    <span class="icon sun">☀️</span>
+    <span class="icon moon">🌙</span>
+    <span class="switch-knob"></span>
   </label>
 </div>
     {{ content }}
@@ -110,6 +108,7 @@ theme-switch {
   function setTheme(theme) {
     document.documentElement.setAttribute('data-theme', theme);
     localStorage.setItem('theme', theme);
+    toggleButton.checked = theme === 'dark';
   }
 
   toggleButton.addEventListener('click', () => {
@@ -118,7 +117,6 @@ theme-switch {
     setTheme(newTheme);
   });
 
-  // On page load
   document.addEventListener('DOMContentLoaded', () => {
     const savedTheme = localStorage.getItem('theme') || 'light';
     setTheme(savedTheme);
