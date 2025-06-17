@@ -5,7 +5,7 @@ title: Home
 
 # 👋 Hi, I'm Nina
 
-I'm a data analyst passionate about turning raw data into actionable insights. I specialize in data wrangling and storytelling with numbers.
+I'm a writer learning data — exploring how to make sense of things through small experiments, research, and reflection.
 
 ## 🧠 Projects
 
@@ -15,6 +15,11 @@ I'm a data analyst passionate about turning raw data into actionable insights. I
 **Skills used:** Pandas, Matplotlib, Seaborn, Data Cleaning, EDA, Correlation Analysis, Log Transformation  
 <a href="https://www.kaggle.com/code/niquienlit/harry-potter-fanfiction-and-pandas" target="_blank"> View project</a>
 
+## 🔍 Explorations
+
+Ongoing reflections and mini-projects from my learning journey — sometimes data-driven, sometimes just trying to understand something better.
+
+➡️ [Visit Explorations](/explorations/)
 
 ## 💼 Tools & Skills
 
