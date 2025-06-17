@@ -5,61 +5,43 @@
     <title>{{ page.title }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-  :root {
-    --bg-color: #ffffff;
-    --text-color: #111111;
-    --link-color: #007acc;
-  }
+:root {
+  --bg-color: #ffffff;
+  --text-color: #111111;
+  --link-color: #007acc;
+  --switch-bg: #eee;
+  --knob-bg: #ffffff;
+}
 
-  [data-theme="dark"] {
-    --bg-color: #111111;
-    --text-color: #eeeeee;
-    --link-color: #66ccff;
-  }
+[data-theme="dark"] {
+  --bg-color: #111111;
+  --text-color: #eeeeee;
+  --link-color: #66ccff;
+  --switch-bg: #444;
+  --knob-bg: #222;
+}
 
   body {
-    background: var(--bg-color);
-    color: var(--text-color);
-    max-width: 700px;
-    margin: 2em auto;
-    font-family: system-ui, sans-serif;
-    padding: 0 1em;
-    line-height: 1.6;
-  }
-
-  a {
-    color: var(--link-color);
-    text-decoration: none;
-  }
-
-  a:hover {
-    text-decoration: underline;
-  }
-
-  h1, h2, h3 {
-    margin-top: 1.5em;
-  }
-
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-
-  hr {
-    margin: 2em 0;
-  }
+  background: var(--bg-color);
+  color: var(--text-color);
+  max-width: 700px;
+  margin: 2em auto;
+  font-family: system-ui, sans-serif;
+  padding: 0 1em;
+  line-height: 1.6;
+}
 
 .theme-switch-wrapper {
   display: flex;
-  justify-content: center;
-  margin: 2em;
+  justify-content: flex-end; /* align to right */
+  margin-bottom: 2em;
 }
 
 .theme-switch {
   position: relative;
   width: 70px;
   height: 36px;
-  background: #eee;
+  background: var(--switch-bg);
   border-radius: 18px;
   display: flex;
   align-items: center;
@@ -68,6 +50,7 @@
   cursor: pointer;
   font-size: 18px;
   box-sizing: border-box;
+  transition: background 0.3s;
 }
 
 .theme-switch .icon {
@@ -80,13 +63,12 @@
   left: 3px;
   width: 30px;
   height: 30px;
-  background: white;
+  background: var(--knob-bg);
   border-radius: 50%;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s, background 0.3s;
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
-/* Move knob to the right when checked */
 #theme-toggle:checked + .theme-switch .switch-knob {
   transform: translateX(34px);
 }
@@ -108,7 +90,7 @@
   function setTheme(theme) {
     document.documentElement.setAttribute('data-theme', theme);
     localStorage.setItem('theme', theme);
-    toggleButton.checked = theme === 'dark';
+    toggleButton.checked = theme === 'dark'; // Sync visual toggle
   }
 
   toggleButton.addEventListener('click', () => {
