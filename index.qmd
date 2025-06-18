@@ -1,9 +1,13 @@
 ---
-title: "Hi, I'm Nina"
+title: ""
 format: html
 ---
 
-I'm a writer learning data — exploring how to make sense of things through small experiments, research, and reflection.
+<div class="terminal-box">
+> Hello  
+> My name is Nina  
+> This is my lifelog and digital playground
+</div>
 
 ## 🧠 Projects
 
