@@ -9,6 +9,19 @@ body {
   padding: 0 1rem;
 }
 
+.terminal-box {
+  background-color: #2e2e2e;
+  color: #d3d3d3;
+  font-family: "Courier New", monospace;
+  padding: 1.5rem;
+  border-radius: 20px;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  white-space: pre-line;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
 /* Headings */
 h1, h2, h3, h4 {
   font-family: "Helvetica Neue", sans-serif;
