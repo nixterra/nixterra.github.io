@@ -1,8 +1,7 @@
 ---
-title: ""
+title: false
 format: html
 ---
-
 <div class="terminal-box">
 > Hello  
 > My name is Nina  
