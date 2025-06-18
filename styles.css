@@ -20,6 +20,10 @@ body {
   white-space: pre-line;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   margin-bottom: 2rem;
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeInUp 1s ease-out forwards;
+  animation-delay: 0.2s;
 }
 
 /* Headings */
