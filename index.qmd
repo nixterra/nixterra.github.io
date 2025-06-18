@@ -1,0 +1,35 @@
+---
+title: "Hi, I'm Nina"
+format: html
+---
+
+I'm a writer learning data — exploring how to make sense of things through small experiments, research, and reflection.
+
+## 🧠 Projects
+
+I explore data through small experiments — blending writing, storytelling, and analysis.
+
+➡️ [View All Projects »](projects/index.qmd)
+
+## 🔍 Explorations
+
+Ongoing reflections and mini-projects from my learning journey — sometimes data-driven, sometimes just trying to understand something better.
+
+➡️ [Visit Explorations](explorations/index.qmd)
+
+## 💼 Tools & Skills
+
+- Python (`pandas`, `NumPy`)  
+- SQL (`PostgreSQL`, `MySQL`)  
+- Excel & Power Query  
+- Tableau  
+- Statistics  
+- Git & GitHub
+
+📫 Contact Me
+
+📧 [Get in touch](mailto:nixterra78@gmail.com) 
+
+🧠 [Visit my GitHub](https://github.com/nixterra)
+
+Built with ❤️ using [GitHub Pages](https://pages.github.com) and [Quarto](https://quarto.org)
