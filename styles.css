@@ -1,1 +1,66 @@
-/* css styles */
+body {
+  font-family: "Georgia", serif;
+  font-size: 1.1rem;
+  line-height: 1.75;
+  color: #1a1a1a;
+  background-color: #ffffff;
+  max-width: 720px;
+  margin: 4rem auto;
+  padding: 0 1rem;
+}
+
+/* Headings */
+h1, h2, h3, h4 {
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-top: 2.5rem;
+  color: #111;
+}
+
+/* Paragraphs */
+p {
+  margin-bottom: 1.5rem;
+}
+
+/* Links */
+a {
+  color: inherit;
+  text-decoration: underline;
+}
+a:hover {
+  text-decoration: none;
+}
+
+/* Code blocks */
+pre, code {
+  background-color: #f7f7f7;
+  border-radius: 4px;
+  padding: 0.2em 0.4em;
+  font-family: "Courier New", monospace;
+  font-size: 0.95em;
+  overflow-x: auto;
+}
+
+/* Inline code */
+code {
+  padding: 0.15em 0.3em;
+}
+
+/* Block quotes */
+blockquote {
+  border-left: 3px solid #ccc;
+  padding-left: 1rem;
+  color: #555;
+  font-style: italic;
+}
+
+/* Hide footer if accidentally present */
+.footer, .quarto-footer {
+  display: none;
+}
+
+/* Hide navbar if enabled by accident */
+.navbar {
+  display: none;
+}
