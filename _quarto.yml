@@ -4,22 +4,16 @@ project:
 
 website:
   title: ""
-  navbar:
-    left:
-      - href: index.qmd
-        text: Home
-      - text: "Projects"
-        menu:
-          - text: "Medium Analysis"
-            href: projects/medium-analysis.qmd
+  navbar: false  
+  page-footer: false 
 
 format:
   html:
-    theme:
-      - cosmo
-      - brand
+    theme: null  
     css: styles.css
-    toc: true
+    toc: false
+    page-layout: full  
+    code-fold: false   
 
 
 
