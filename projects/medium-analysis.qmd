@@ -3,7 +3,7 @@ title: "Medium Analysis Pet Project"
 format: html
 ---
 
-## 📝 About This Project
+### About This Project
 
 I created this project to explore what drives engagement on Medium — using public data and hands-on Python analysis.
 
@@ -16,7 +16,7 @@ All visuals and analysis are now fully integrated below using Python and Quarto 
 
 ---
 
-## 🧰 Tools & Skills
+### Tools & Skills
 
 - `Python` (Pandas, Matplotlib, Seaborn) for data cleaning and analysis  
 - `Quarto` to publish analysis  
@@ -25,14 +25,14 @@ All visuals and analysis are now fully integrated below using Python and Quarto 
 
 ---
 
-## 📂 Dataset
+### Dataset
 
 - **Source:** [Kaggle - Medium Articles Dataset](https://www.kaggle.com/datasets/arnabchaki/medium-articles-dataset)  
   Contains metadata for ~1,800 Medium articles: title, claps, responses, reading time, publication, date
 
 ---
 
-## 📊 Key Findings
+### Key Findings
 
 - **The Startup** dominates top clapped articles — strong brand power  
 - Best-performing articles tend to be **6–9 minutes**  
@@ -41,7 +41,7 @@ All visuals and analysis are now fully integrated below using Python and Quarto 
 
 ---
 
-## 🎯 Why I Did This
+### Why I Did This
 
 This project simulates a real-world editorial question:
 
@@ -51,7 +51,7 @@ By combining public data, Python, and lightweight reporting tools, I aimed to sh
 
 ---
 
-## 🧪 Analysis Summary (Python)
+### Analysis Summary (Python)
 To start the analysis, I loaded the dataset and imported key libraries used for data wrangling and visualization:
 
 ```{python}
@@ -65,8 +65,9 @@ df = pd.read_csv("data/medium_data.csv")
 ```
 The data includes article metadata such as publication, reading time, claps, and responses. Next, I cleaned and prepared the dataset for analysis.
 
-## 🧪 Data Cleaning
+### Data Cleaning
 Before analyzing the data, I cleaned and prepared it by:
+
 - Parsing the publication date
 - Filtering out articles with zero claps
 - Calculating a new feature: **claps per minute of reading time**
@@ -77,13 +78,13 @@ df = df[df['claps'] > 0].copy()
 df['claps_per_min'] = df['claps'] / df['reading_time']
 ```
 
-## 🧪 Descriptive Stats
+### Descriptive Stats
 
 ```{python}
 df[['claps', 'reading_time', 'responses']].describe()
 ```
 
-## 🧪 Visualizing Distributions
+### Visualizing Distributions
 To understand the general spread and outliers in the dataset, I visualized the distributions of claps, reading time, and responses using boxplots. This helped surface skewed engagement patterns and typical article behavior.
 ```{python}
 plt.figure(figsize=(15, 5))

@@ -5,15 +5,18 @@ project:
 website:
   title: ""
   navbar: false  
-  page-footer: false 
+  page-footer: "" 
 
 format:
   html:
-    theme: null  
+    theme: none  
+    highlight-style: atom-one-dark
+    template: resources/_templates/default.html
     css: styles.css
     toc: false
     page-layout: full  
-    code-fold: false   
+    code-fold: false
+      
 
 
 

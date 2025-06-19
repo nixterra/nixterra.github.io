@@ -1,38 +1,21 @@
 ---
-title: false
+title: ""
 format: html
 ---
-<div class="terminal-box">
-> Hello  
-> My name is Nina  
-> This is my lifelog and digital playground
+
+### Projects & explorations
+
+A collection of small projects, reflections, and experiments — some data-driven, others just an attempt to make sense of something.
+
+#### Recent highlights  
+<div class="highlight-list">
+  <div><a class="highlight-item" href="projects/medium-analysis.html">Medium reading analysis</a></div>
 </div>
 
-## 🧠 Projects
+[View the full archive →](projects/index.qmd)
 
-I explore data through small experiments — blending writing, storytelling, and analysis.
+### Get in touch
 
-➡️ [View All Projects »](projects/index.qmd)
+I'm always happy to connect. [Email me](mailto:nixterra78@gmail.com) or visit [my GitHub](https://github.com/nixterra).
 
-## 🔍 Explorations
 
-Ongoing reflections and mini-projects from my learning journey — sometimes data-driven, sometimes just trying to understand something better.
-
-➡️ [Visit Explorations](explorations/index.qmd)
-
-## 💼 Tools & Skills
-
-- Python (`pandas`, `NumPy`)  
-- SQL (`PostgreSQL`, `MySQL`)  
-- Excel & Power Query  
-- Tableau  
-- Statistics  
-- Git & GitHub
-
-📫 Contact Me
-
-📧 [Get in touch](mailto:nixterra78@gmail.com) 
-
-🧠 [Visit my GitHub](https://github.com/nixterra)
-
-Built with ❤️ using [GitHub Pages](https://pages.github.com) and [Quarto](https://quarto.org)

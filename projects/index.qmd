@@ -1,21 +1,12 @@
 ---
 title: "Projects"
-format: html
 ---
 
 Here’s a collection of my projects — each one started with curiosity and became a way to practice turning messy data into useful insight.
 
 ---
 
-### 📈 [Harry Potter Fanfiction Exploration](hp-fanfiction.qmd)
-
-Explored how story length correlates with popularity in a large fanfiction dataset. Used log-log plots, binning, and correlation metrics to surface patterns.
-
----
-
----
-
-### 📝 [Medium Analysis: What Drives Engagement on Medium](medium-analysis.qmd)
+### [Medium Analysis: What Drives Engagement on Medium](medium-analysis.qmd)
 
 Explored ~1,800 Medium articles to understand patterns in claps, reading time, and responses. Built a reproducible analysis in Python and a summary report in Looker Studio.  
 

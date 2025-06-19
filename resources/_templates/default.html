@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html lang="en"><head>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-html/tabby.min.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-html-435ba6093e6f0817aa7405139811e7b1.min.css" rel="stylesheet" append-hash="true" data-mode="light">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-e25bb2ec88b96ab004d13ad1d1924df4.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="UTF-8">
-  <title>About</title>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>$title$</title>
 
-      <link rel="stylesheet" href="styles.css">
-  
-  </head>
+  $for(css)$
+    <link rel="stylesheet" href="$css$">
+  $endfor$
+
+  $if(highlighting-css)$
+    <style type="text/css">
+    $highlighting-css$
+    </style>
+  $endif$
+</head>
 
   <body>
 
@@ -47,7 +47,7 @@
 </script>
 
     <!-- Terminal box globally shown on every page -->
-    <a href="./" style="text-decoration: none;">
+    <a href="/" style="text-decoration: none;">
     <div class="terminal-box">
       <p>&gt; Hello</p>
       <p>&gt; My name is Nina</p>
@@ -55,8 +55,7 @@
     </div>
     </a>
 
-    <p>About this site</p>
-    
+    $body$
 
-  
-</body></html>
+  </body>
+</html>
