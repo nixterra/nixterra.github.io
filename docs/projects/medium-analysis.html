@@ -9,6 +9,8 @@
 <link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/quarto-html-435ba6093e6f0817aa7405139811e7b1.min.css" rel="stylesheet" append-hash="true" data-mode="light">
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-e25bb2ec88b96ab004d13ad1d1924df4.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal site of Nina – exploring data through writing, code, and small research projects.">
   <title>Medium Analysis Pet Project</title>
 
       <link rel="stylesheet" href="../styles.css">
@@ -51,46 +53,46 @@
     </style>
   </head>
 
-  <body>
-
+<body>
   <!-- Theme toggle button -->
   <div class="theme-switch-wrapper">
-  <label class="theme-switch">
-    <input type="checkbox" id="theme-toggle">
-    <span class="slider round"></span>
-  </label>
-</div>
+    <label class="theme-switch">
+      <input type="checkbox" id="theme-toggle">
+      <span class="slider round"></span>
+    </label>
+  </div>
 
-<script>
-  const toggle = document.getElementById('theme-toggle');
-  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-  const storedTheme = localStorage.getItem('theme');
+  <script>
+    const toggle = document.getElementById('theme-toggle');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const storedTheme = localStorage.getItem('theme');
 
-  if (storedTheme === 'dark' || (!storedTheme && prefersDark)) {
-    document.body.classList.add('dark');
-    toggle.checked = true;
-  }
-
-  toggle.addEventListener('change', function () {
-    if (this.checked) {
+    if (storedTheme === 'dark' || (!storedTheme && prefersDark)) {
       document.body.classList.add('dark');
-      localStorage.setItem('theme', 'dark');
-    } else {
-      document.body.classList.remove('dark');
-      localStorage.setItem('theme', 'light');
+      toggle.checked = true;
     }
-  });
-</script>
 
-    <!-- Terminal box globally shown on every page -->
-    <a href="../" style="text-decoration: none;">
+    toggle.addEventListener('change', function () {
+      if (this.checked) {
+        document.body.classList.add('dark');
+        localStorage.setItem('theme', 'dark');
+      } else {
+        document.body.classList.remove('dark');
+        localStorage.setItem('theme', 'light');
+      }
+    });
+  </script>
+
+  <!-- Terminal box globally shown on every page -->
+  <a href="../" style="text-decoration: none;">
     <div class="terminal-box">
       <p>&gt; Hello</p>
       <p>&gt; My name is Nina</p>
       <p>&gt; This is where I explore data through writing, code, and small research projects <span class="cursor"></span></p>
     </div>
-    </a>
+  </a>
 
+  <main><header id="title-block-header" class="quarto-title-block"></header>
     <h3 id="about-this-project" class="anchored">About This Project</h3>
     <p>I created this project to explore what drives engagement on Medium — using public data and hands-on Python analysis.</p>
     <p>I analyzed ~1,800 Medium articles to uncover patterns in claps, reading time, and responses. This page walks through the full process, including: • Cleaning and transforming the data • Generating summary statistics and visualizations • Extracting insights useful for content planning</p>
@@ -272,6 +274,6 @@
 •   Reading time is typically 5–10 minutes
 •   Responses are sparse, with most articles receiving very few</code></pre>
     
+  </main>
 
-  
 </body></html>
