@@ -11,7 +11,6 @@ This is the source code for my personal website, built with [Quarto](https://qua
 ## 📁 Structure
 
 - `index.qmd` – Homepage
-- `about.qmd` – About page (optional)
 - `projects/` – Contains project pages like Medium analysis
 - `styles.css` – Custom site styles
 - `_quarto.yml` – Site configuration
