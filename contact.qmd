@@ -9,6 +9,10 @@ I'm always happy to connect — especially if you're into research, tools, writi
   </a>
 - GitHub: <a href="https://github.com/nixterra">@nixterra</a>
 
+<p style="font-style: italic; margin-top: 1rem;">
+Or just say hi — I read everything.
+</p>
+
 <form action="https://formspree.io/f/mvgrlygy" method="POST" class="contact-form">
 
   <label for="email">Your email</label><br>
@@ -22,7 +26,3 @@ I'm always happy to connect — especially if you're into research, tools, writi
 
   <button type="submit">Send</button>
 </form>
-
-<p style="font-style: italic; margin-top: 1rem;">
-Or just say hi — I read everything.
-</p>
