@@ -4,4 +4,10 @@ title: "Notes"
 
 This is a growing pile of notes: on books, ideas, questions, or odd patterns I’ve come across.
 
-**Coming sooon**
+### Recent Notes
+
+<div class="highlight-list">
+  <div><a class="highlight-item" href="from-markdown-to-website.qmd">From Markdown to Website: How I Used Quarto to Build My Site Without Coding</a></div>
+</div>
+
+A walkthrough of how I built my personal website using Quarto — no coding required. Shares insights on converting Markdown notes into a polished site and the benefits of using Quarto as a content tool.  

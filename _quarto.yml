@@ -3,19 +3,18 @@ project:
   output-dir: docs
 
 website:
-  title: "Nina"
+  title: "Nina's Notes"
   navbar:
     left:
-      - text: Home
-        href: index.qmd
-      - text: About
-        href: about.qmd
       - text: Projects
         href: projects/index.qmd
-      - text: Notes
-        href: notes/index.qmd
-      - text: Contact
-        href: contact.qmd
+      - text: About
+        href: about.qmd
+
+    right:
+      - icon: moon
+        href: "#"
+        aria-label: "Toggle theme"
 
   page-footer:
     left: "© 2025 Nina"
@@ -30,7 +29,6 @@ format:
     toc: false
     page-layout: full
     code-fold: false
-      
 
 
 

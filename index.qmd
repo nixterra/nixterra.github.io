@@ -16,6 +16,6 @@ A collection of small projects, reflections, and experiments — some data-drive
   <div><a class="highlight-item" href="projects/medium-analysis.html">Medium reading analysis</a></div>
 </div>
 
-[View the full archive →](projects/index.qmd)
+[View the full archive →](projects/index.qmd){.animated-link}
 
 

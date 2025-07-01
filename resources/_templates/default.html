@@ -20,12 +20,14 @@
 
 <body>
   <!-- Theme toggle button -->
-  <div class="theme-switch-wrapper">
-    <label class="theme-switch">
-      <input type="checkbox" id="theme-toggle">
-      <span class="slider round"></span>
-    </label>
-  </div>
+<div class="header-actions">
+  <a href="mailto:nixterra78@gmail.com" class="mail-link" aria-label="Email me">Email</a>
+  <a href="/notes/index.html" class="notes-link" aria-label="Notes">Notes</a>
+</div>
+
+$if(site-navbar)$
+  $site-navbar$
+$endif$
 
   <script>
     const toggle = document.getElementById('theme-toggle');
@@ -64,17 +66,21 @@ $else$
   </a>
 $endif$
 
+<div class="header-left">
+  <a href="/projects/index.html">Projects</a>
+  <a href="/about.html">About</a>
+</div>
+
   <main>
     $body$
   </main>
-
-  <footer class="site-footer">
-  <div class="footer-nav">
-    <a href="/about.html">About</a> · 
-    <a href="/projects/index.html">Projects</a> · 
-    <a href="/notes/index.html">Notes</a> · 
-    <a href="/contact.html">Contact</a>
-  </div>
-</footer>
+<footer class="site-footer">
+    $if(page-footer-left)$
+      <div class="footer-left">$page-footer-left$</div>
+    $endif$
+    $if(page-footer-right)$
+      <div class="footer-right">$page-footer-right$</div>
+    $endif$
+  </footer>
 </body>
 </html>

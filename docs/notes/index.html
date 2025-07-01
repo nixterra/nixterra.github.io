@@ -20,12 +20,11 @@
 
 <body>
   <!-- Theme toggle button -->
-  <div class="theme-switch-wrapper">
-    <label class="theme-switch">
-      <input type="checkbox" id="theme-toggle">
-      <span class="slider round"></span>
-    </label>
-  </div>
+<div class="header-actions">
+  <a href="mailto:nixterra78@gmail.com" class="mail-link" aria-label="Email me">Email</a>
+  <a href="../notes/index.html" class="notes-link" aria-label="Notes">Notes</a>
+</div>
+
 
   <script>
     const toggle = document.getElementById('theme-toggle');
@@ -54,19 +53,23 @@
     </div>
   </a>
 
+<div class="header-left">
+  <a href="../projects/index.html">Projects</a>
+  <a href="../about.html">About</a>
+</div>
+
   <main><header id="title-block-header" class="quarto-title-block"></header>
     <p>This is a growing pile of notes: on books, ideas, questions, or odd patterns I’ve come across.</p>
-    <p><strong>Coming sooon</strong></p>
+    <h3 id="recent-notes" class="anchored">Recent Notes</h3>
+    <div class="highlight-list">
+    <div>
+    <a class="highlight-item" href="../notes/from-markdown-to-website.html">From Markdown to Website: How I Used Quarto to Build My Site Without Coding</a>
+    </div>
+    </div>
+    <p>A walkthrough of how I built my personal website using Quarto — no coding required. Shares insights on converting Markdown notes into a polished site and the benefits of using Quarto as a content tool.</p>
     
   </main>
-
-  <footer class="site-footer">
-  <div class="footer-nav">
-    <a href="../about.html">About</a> · 
-    <a href="../projects/index.html">Projects</a> · 
-    <a href="../notes/index.html">Notes</a> · 
-    <a href="../contact.html">Contact</a>
-  </div>
-</footer>
+<footer class="site-footer">
+          </footer>
 
 </body></html>

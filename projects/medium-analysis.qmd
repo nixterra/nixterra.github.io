@@ -31,7 +31,7 @@ All visuals and analysis are now fully integrated below using Python and Quarto 
 
 ### Dataset
 
-- **Source:** [Kaggle - Medium Articles Dataset](https://www.kaggle.com/datasets/arnabchaki/medium-articles-dataset)  
+- **Source:** [Kaggle - Medium Articles Dataset](https://www.kaggle.com/datasets/arnabchaki/medium-articles-dataset){.animated-link}  
   Contains metadata for ~1,800 Medium articles: title, claps, responses, reading time, publication, date
 
 ---
