@@ -1,0 +1,25 @@
+---
+title: "Contact"
+---
+
+I'm always happy to connect — especially if you're into research, tools, writing, or thoughtful tech.
+
+- 📧 Email: [nixterra78@gmail.com](mailto:nixterra78@gmail.com)
+- 🐙 GitHub: [@nixterra](https://github.com/nixterra)
+
+Or, if you’d rather send a quick message here:
+
+<form action="https://formspree.io/f/mvgrlygy" method="POST" class="contact-form">
+
+  <label for="email">Your email</label><br>
+  <input type="email" name="email" id="email" required><br><br>
+
+  <label for="message">Message</label><br>
+  <textarea name="message" id="message" rows="5" required></textarea><br><br>
+
+  <button type="submit">Send</button>
+</form>
+
+<p style="font-style: italic; margin-top: 1rem;">
+Or just say hi — I read everything.
+</p>

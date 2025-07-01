@@ -2,4 +2,34 @@
 title: "About"
 ---
 
-About this site
+## About this site
+
+This site is about:
+
+- being curious about how things work  
+- finding stories in data — even small, messy, personal ones  
+- using code to ask better questions  
+- writing clearly instead of sounding smart  
+- taking ideas apart and putting them back together  
+- building a small habit of sharing what I learn
+
+Sometimes it's a data project, sometimes it’s just a few notes from a book or experiment. The point isn’t to impress, it’s to understand.
+
+---
+
+## About me
+
+I started out in content writing, but over time I grew more interested in the patterns behind the content: the data, the systems, the questions no one was asking.
+
+Now I explore that space through small research projects, writing, and data analysis. Sometimes I write code to understand things better. Sometimes I write essays to slow down my thinking. Either way, this site is where I track that process.
+
+---
+
+### What I work with
+
+- Python / Jupyter / Pandas
+- Quarto (obviously)
+- APIs, scraping, light automation
+- Text analysis, small-scale data research
+- Occasional zettelkasten-ish note structures
+- A healthy dose of curiosity

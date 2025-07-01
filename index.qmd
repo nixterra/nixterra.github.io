@@ -1,6 +1,10 @@
 ---
-title: ""
-format: html
+title: "Nina's Notebook"
+home: true
+format:
+  html:
+    theme: none
+    page-layout: full
 ---
 
 ### Projects & explorations
@@ -13,9 +17,5 @@ A collection of small projects, reflections, and experiments — some data-drive
 </div>
 
 [View the full archive →](projects/index.qmd)
-
-### Get in touch
-
-I'm always happy to connect. [Email me](mailto:nixterra78@gmail.com) or visit [my GitHub](https://github.com/nixterra).
 
 

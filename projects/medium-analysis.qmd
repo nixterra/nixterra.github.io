@@ -1,6 +1,10 @@
 ---
 title: "Medium Analysis Pet Project"
 format: html
+execute:
+  echo: true
+  eval: true
+  engine: jupyter
 ---
 
 ### About This Project
@@ -109,6 +113,6 @@ plt.show()
 ```
 Boxplots show that:
 
-	•	Claps are heavily right-skewed with a few viral outliers
-	•	Reading time is typically 5–10 minutes
-	•	Responses are sparse, with most articles receiving very few
+- Claps are heavily right-skewed with a few viral outliers
+- Reading time is typically 5–10 minutes
+- Responses are sparse, with most articles receiving very few
