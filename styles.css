@@ -1,0 +1,371 @@
+/* === Base Styles === */
+body {
+  font-family: Menlo, Consolas, 'Liberation Mono', monospace;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--text);
+  background-color: var(--bg);
+  max-width: 720px;
+  margin: 4rem auto;
+  padding: 0 1rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+p {
+  margin-bottom: 1.5rem;
+}
+
+a {
+  color: inherit;
+  text-decoration: underline;
+}
+a:hover {
+  text-decoration: none;
+}
+
+/* === Theme Vars === */
+:root {
+  --bg: #FAF3E0;
+  --text: #3B3B3B;
+  --terminal-bg: #3F3F3F;
+  --terminal-text: #E0E0E0;
+  --switch-light: #D6CFC1;
+  --switch-dark: #444;
+  --thumb-light: #3B3B3B;
+  --thumb-dark: #FAF3E0;
+}
+body.dark {
+  --bg: #2A2523;
+  --text: #CFC9E0;
+  --terminal-bg: #2A2A2A;
+  --terminal-text: #D5D5D5;
+}
+
+/* === Headings === */
+h1, h2, h3, h4 {
+  font-family: 'Atkinson Hyperlegible', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-top: 2em;
+  margin-bottom: .5em;
+  color: #111;
+  letter-spacing: -0.25px;
+}
+body.dark h1, body.dark h2, body.dark h3, body.dark h4 {
+  color: #F0F0F0;
+}
+
+/* === Terminal Box (click-home link) === */
+.terminal-box {
+  background-color: var(--terminal-bg);
+  color: var(--terminal-text);
+  font-family: "Courier New", monospace;
+  padding: 1.5rem;
+  border-radius: 20px;
+  font-size: 1.05rem;
+  line-height: 1.3;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: box-shadow 0.2s ease;
+}
+.terminal-box:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+.terminal-box p {
+  margin: 0.25rem 0;
+}
+
+.cursor {
+  display: inline-block;
+  background-color: #CAD2D4;
+  width: 0.6ch;
+  height: 1em;
+  margin-left: 0.2ch;
+  vertical-align: middle;
+  animation: blink 1s steps(1) infinite;
+}
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* === Highlight tags === */
+.highlight-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin: 2rem 0;
+}
+.highlight-item {
+  background-color: #D9C8F2;
+  color: #3B3B3B;
+  padding: 0.1rem 0.25rem;
+  border-radius: 4px;
+  font-size: 1.05rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+.highlight-item:hover {
+  background-color: #C9B4EA;
+}
+body.dark .highlight-item {
+  background-color: #D9C8F2;
+  color: #1C1C1C;
+}
+
+/* === Code: inline === */
+code {
+  background-color: #f3eee3;
+  color: #2B2B2B;
+  font-family: "Courier New", monospace;
+  font-size: 0.95em;
+  padding: 0.15em 0.35em;
+  border-radius: 4px;
+}
+body.dark :not(pre) > code {
+  background-color: #2C2C2C;
+  color: #EDEDED;
+}
+
+/* === Code: blocks === */
+pre {
+  background-color: #f1ede7;
+  color: #2B2B2B;
+  font-family: "Courier New", monospace;
+  font-size: 0.95em;
+  padding: 1rem;
+  border-radius: 8px;
+  overflow-x: auto;
+  margin: 1.5rem 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e0dbd1;
+}
+body.dark pre {
+  background-color: #1E1E1E;
+  color: #EDEDED;
+  box-shadow: 0 3px 16px rgba(0, 0, 0, 0.3);
+  border: 1px solid #333;
+}
+pre code {
+  background: none;
+  border: none;
+  padding: 0;
+  box-shadow: none;
+}
+
+/* === Syntax highlighting: light === */
+.hljs { color: #2B2B2B; }
+.hljs-keyword { color: #7c3aed; font-weight: 600; }
+.hljs-string { color: #006d77; }
+.hljs-number { color: #d6336c; }
+.hljs-comment { color: #6a737d; font-style: italic; }
+.hljs-title, .hljs-variable { color: #b25c00; }
+.hljs-function, .hljs-title.function_ { color: #0b5394; }
+.hljs-built_in { color: #7c3aed; }
+
+/* === Syntax highlighting: dark === */
+body.dark .hljs { color: #EDEDED; }
+body.dark .hljs-keyword { color: #FFB86C; font-weight: 600; }
+body.dark .hljs-string { color: #A3E635; }
+body.dark .hljs-number { color: #F87171; }
+body.dark .hljs-comment { color: #9CA3AF; font-style: italic; }
+body.dark .hljs-title, body.dark .hljs-variable { color: #FACC15; }
+body.dark .hljs-function, body.dark .hljs-title.function_ { color: #7DD3FC; }
+body.dark .hljs-built_in { color: #93C5FD; }
+
+/* === Blockquotes === */
+blockquote {
+  border-left: 3px solid #ccc;
+  padding-left: 1rem;
+  color: #555;
+  font-style: italic;
+}
+
+/* === Images === */
+img, .quarto-figure > figure > img {
+  border: 1px solid #DDD;
+  border-radius: 6px;
+  padding: 4px;
+  background: #fff;
+}
+
+/* === Hide Quarto UI bits === */
+.footer, .quarto-footer {
+  display: none;
+}
+body.dark hr {
+  border-color: #444;
+}
+
+/* === header === */
+.header-actions {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  display: flex;
+  gap: 1rem;
+  font-size: 0.85rem;
+  opacity: 0.7;
+  z-index: 1000;
+}
+.header-left {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  display: flex;
+  gap: 1rem;
+  font-size: 0.85rem;
+  opacity: 0.7;
+  z-index: 1000;
+}
+
+.header-actions a,
+.header-left a,
+.minimal-link {
+  position: relative;
+  text-transform: lowercase;
+  font-size: 0.85rem;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  text-decoration: none;
+  color: inherit;
+  padding-bottom: 2px;
+  border-bottom: 1px dotted currentColor;
+  transition: opacity 0.2s ease;
+}
+
+.header-actions a::after,
+.header-left a::after,
+.minimal-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.2s ease;
+  opacity: 0.6;
+}
+
+.header-actions a:hover::after,
+.header-left a:hover::after,
+.minimal-link:hover::after {
+  transform: scaleX(1);
+  opacity: 1;
+}
+
+/* === Scribble Highlight Link === */
+.scribble-link {
+  color: inherit;
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 6px;
+  padding: 0.1em 0.25em;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* === DARK THEME === */
+body.dark .scribble-link {
+  color: var(--text); /* Light gray */
+}
+
+body.dark .scribble-link:hover {
+  background-color: #D9C8F2;  /* Lavender */
+  color: #1B1B1B;             /* Dark gray text */
+}
+
+/* === LIGHT THEME === */
+body:not(.dark) .scribble-link:hover {
+  background-color: #D9C8F2;
+  color: #1B1B1B;
+}
+
+/* === Mobile Responsiveness === */
+@media (max-width: 600px) {
+  body {
+    padding: 0 0.75rem;
+    font-size: 15px;
+  }
+  h1, h2, h3, h4 {
+    font-size: 1.1em;
+    margin-top: 1.5em;
+  }
+  .terminal-box {
+    font-size: 0.95rem;
+    padding: 1rem;
+  }
+  pre {
+    font-size: 0.9em;
+    padding: 0.75rem;
+  }
+  code {
+    font-size: 0.9em;
+  }
+}
+
+/* === Site Footer === */
+.site-footer {
+  margin-top: 4rem;
+  padding: 2rem 0 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #999;
+}
+.site-footer a {
+  color: inherit;
+  text-decoration: none;
+  margin: 0 0.5rem;
+}
+.site-footer a:hover {
+  text-decoration: underline;
+}
+
+/* === Contact Form === */
+.contact-form {
+  margin-top: 2rem;
+  max-width: 500px;
+}
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  font-family: Menlo, monospace;
+  font-size: 1rem;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #000;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+body.dark .contact-form input,
+body.dark .contact-form textarea {
+  background-color: #1c1c1c;
+  color: #eaeaea;
+  border: 1px solid #444;
+}
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #888;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(100, 100, 100, 0.1);
+}
+.contact-form button {
+  font-family: Menlo, monospace;
+  font-size: 0.95rem;
+  background-color: #f2e39b;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+.contact-form button:hover {
+  background-color: #e4d27a;
+}
+body.dark .contact-form button {
+  background-color: #f2e39b;
+  color: #1c1c1c;
+}
