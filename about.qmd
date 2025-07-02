@@ -7,7 +7,7 @@ title: "About"
 This site is about:
 
 - being curious about how things work  
-- finding stories in data — even small, messy, personal ones  
+- finding stories in data, even small, messy, personal ones  
 - using code to ask better questions  
 - writing clearly instead of sounding smart  
 - taking ideas apart and putting them back together  

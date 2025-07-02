@@ -1,3 +1,13 @@
+format:
+  html:
+    template: resources/_templates/default.html  
+    theme: none
+    css: styles.css
+    highlight-style: atom-one-dark
+    toc: false
+    page-layout: article
+    code-fold: false
+
 project:
   type: website
   output-dir: docs
@@ -8,27 +18,15 @@ website:
     left:
       - text: Projects
         href: projects/index.qmd
-      - text: About
-        href: about.qmd
-
+      - text: Notes
+        href: notes/index.qmd
     right:
-      - icon: moon
-        href: "#"
-        aria-label: "Toggle theme"
+      - text: Email
+        href: "mailto:nixterra78@gmail.com"
 
   page-footer:
     left: "© 2025 Nina"
     right: "Built with [Quarto](https://quarto.org)"
-
-format:
-  html:
-    theme: none
-    template: resources/_templates/default.html
-    css: styles.css
-    highlight-style: atom-one-dark
-    toc: false
-    page-layout: full
-    code-fold: false
 
 
 

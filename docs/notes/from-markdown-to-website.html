@@ -18,55 +18,36 @@
   
   </head>
 
-<body>
-  <!-- Theme toggle button -->
-<div class="header-actions">
-  <a href="mailto:nixterra78@gmail.com" class="mail-link" aria-label="Email me">Email</a>
-  <a href="../notes/index.html" class="notes-link" aria-label="Notes">Notes</a>
+<body class="quarto-page dark">
+
+<!-- 🌙 Custom header nav -->
+<div class="header-left">
+  <a href="../projects/index.html">Projects</a>
+  <a href="../notes/index.html">Notes</a>
 </div>
 
+<div class="header-actions">
+  <a href="mailto:nixterra78@gmail.com" class="mail-link" aria-label="Email me">Email</a>
+</div>
 
-  <script>
-    const toggle = document.getElementById('theme-toggle');
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    const storedTheme = localStorage.getItem('theme');
-
-    if (storedTheme === 'dark' || (!storedTheme && prefersDark)) {
-      document.body.classList.add('dark');
-      toggle.checked = true;
-    }
-
-    toggle.addEventListener('change', function () {
-      if (this.checked) {
-        document.body.classList.add('dark');
-        localStorage.setItem('theme', 'dark');
-      } else {
-        document.body.classList.remove('dark');
-        localStorage.setItem('theme', 'light');
-      }
-    });
-  </script>
-
+<!-- Terminal-style box -->
   <a href="../" style="text-decoration: none;">
     <div class="terminal-box">
       <p>&gt; ← Home <span class="cursor"></span></p>
     </div>
   </a>
 
-<div class="header-left">
-  <a href="../projects/index.html">Projects</a>
-  <a href="../about.html">About</a>
-</div>
+<main><header id="title-block-header" class="quarto-title-block"></header>
+  <h2 id="from-markdown-to-website-how-i-used-quarto-to-build-my-site-without-coding" class="anchored">From Markdown to Website: How I Used Quarto to Build My Site Without Coding</h2>
+  <p>Here’s a summary of how I built my personal website using Quarto — no coding required.</p>
+  <p>Quarto allowed me to convert my Markdown notes into a beautiful website easily, combining reproducible content and minimal setup. This method helped me focus on content while maintaining professional web presence.</p>
+  <p>For the full article, check it out on Medium:<br>
+  <a href="https://medium.com/@nixterra/from-markdown-to-website-how-i-used-quarto-to-build-my-site-without-coding-9c7ea3deea3b" class="minimal-link" target="_blank" rel="noopener noreferrer">Read on Medium »</a></p>
+  
+</main>
 
-  <main><header id="title-block-header" class="quarto-title-block"></header>
-    <h2 id="from-markdown-to-website-how-i-used-quarto-to-build-my-site-without-coding" class="anchored">From Markdown to Website: How I Used Quarto to Build My Site Without Coding</h2>
-    <p>Here’s a summary of how I built my personal website using Quarto — no coding required.</p>
-    <p>Quarto allowed me to convert my Markdown notes into a beautiful website easily, combining reproducible content and minimal setup. This method helped me focus on content while maintaining professional web presence.</p>
-    <p>For the full article, check it out on Medium:<br>
-    <a href="https://medium.com/@nixterra/from-markdown-to-website-how-i-used-quarto-to-build-my-site-without-coding-9c7ea3deea3b" class="animated-link" target="_blank" rel="noopener noreferrer">Read on Medium »</a></p>
-    
-  </main>
 <footer class="site-footer">
-          </footer>
+    </footer>
+
 
 </body></html>

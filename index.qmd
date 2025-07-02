@@ -6,16 +6,22 @@ format:
     theme: none
     page-layout: full
 ---
+This is where I share pet projects, experiments, and small notes that don't quite fit into full projects but are still worth jotting down.
+
+If you're wondering what this is about, [read more here](about.qmd){.minimal-link}.
 
 ### Projects & explorations
 
 A collection of small projects, reflections, and experiments — some data-driven, others just an attempt to make sense of something.
 
 #### Recent highlights  
-<div class="highlight-list">
-  <div><a class="highlight-item" href="projects/medium-analysis.html">Medium reading analysis</a></div>
-</div>
+[Medium Reading Analysis](../projects/medium-analysis.html){.scribble-link}
 
-[View the full archive →](projects/index.qmd){.animated-link}
+Explored ~1,800 Medium articles to understand patterns in claps, reading time, and responses. Built a reproducible analysis in Python and a summary report in Looker Studio.  
+
+**Skills:** `pandas`, `matplotlib`, `seaborn`, `Quarto`, content strategy  
+**Findings:** Articles 6–9 min long performed best; engagement peaked in Q1
+
+[view the full archive →](projects/index.qmd){.minimal-link}
 
 

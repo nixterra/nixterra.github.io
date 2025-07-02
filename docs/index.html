@@ -18,35 +18,19 @@
   
   </head>
 
-<body>
-  <!-- Theme toggle button -->
-<div class="header-actions">
-  <a href="mailto:nixterra78@gmail.com" class="mail-link" aria-label="Email me">Email</a>
-  <a href="./notes/index.html" class="notes-link" aria-label="Notes">Notes</a>
+<body class="quarto-page dark">
+
+<!-- 🌙 Custom header nav -->
+<div class="header-left">
+  <a href="./projects/index.html">Projects</a>
+  <a href="./notes/index.html">Notes</a>
 </div>
 
+<div class="header-actions">
+  <a href="mailto:nixterra78@gmail.com" class="mail-link" aria-label="Email me">Email</a>
+</div>
 
-  <script>
-    const toggle = document.getElementById('theme-toggle');
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    const storedTheme = localStorage.getItem('theme');
-
-    if (storedTheme === 'dark' || (!storedTheme && prefersDark)) {
-      document.body.classList.add('dark');
-      toggle.checked = true;
-    }
-
-    toggle.addEventListener('change', function () {
-      if (this.checked) {
-        document.body.classList.add('dark');
-        localStorage.setItem('theme', 'dark');
-      } else {
-        document.body.classList.remove('dark');
-        localStorage.setItem('theme', 'light');
-      }
-    });
-  </script>
-
+<!-- Terminal-style box -->
   <a href="./" style="text-decoration: none;">
     <div class="terminal-box">
       <p>&gt; I work with data, content, and questions</p>
@@ -55,24 +39,22 @@
     </div>
   </a>
 
-<div class="header-left">
-  <a href="./projects/index.html">Projects</a>
-  <a href="./about.html">About</a>
-</div>
+<main><header id="title-block-header" class="quarto-title-block"></header>
+  <p>This is where I share pet projects, experiments, and small notes that don’t quite fit into full projects but are still worth jotting down.</p>
+  <p>If you’re wondering what this is about, <a href="./about.html" class="minimal-link">read more here</a>.</p>
+  <h3 id="projects-explorations" class="anchored">Projects &amp; explorations</h3>
+  <p>A collection of small projects, reflections, and experiments — some data-driven, others just an attempt to make sense of something.</p>
+  <h4 id="recent-highlights" class="anchored">Recent highlights</h4>
+  <p><a href="../projects/medium-analysis.html" class="scribble-link">Medium Reading Analysis</a></p>
+  <p>Explored ~1,800 Medium articles to understand patterns in claps, reading time, and responses. Built a reproducible analysis in Python and a summary report in Looker Studio.</p>
+  <p><strong>Skills:</strong> <code>pandas</code>, <code>matplotlib</code>, <code>seaborn</code>, <code>Quarto</code>, content strategy<br>
+  <strong>Findings:</strong> Articles 6–9 min long performed best; engagement peaked in Q1</p>
+  <p><a href="./projects/index.html" class="minimal-link">view the full archive →</a></p>
+  
+</main>
 
-  <main><header id="title-block-header" class="quarto-title-block"></header>
-    <h3 id="projects-explorations" class="anchored">Projects &amp; explorations</h3>
-    <p>A collection of small projects, reflections, and experiments — some data-driven, others just an attempt to make sense of something.</p>
-    <h4 id="recent-highlights" class="anchored">Recent highlights</h4>
-    <div class="highlight-list">
-    <div>
-    <a class="highlight-item" href="projects/medium-analysis.html">Medium reading analysis</a>
-    </div>
-    </div>
-    <p><a href="./projects/index.html" class="animated-link">View the full archive →</a></p>
-    
-  </main>
 <footer class="site-footer">
-          </footer>
+    </footer>
+
 
 </body></html>

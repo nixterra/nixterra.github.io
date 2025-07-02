@@ -18,80 +18,61 @@
   
   </head>
 
-<body>
-  <!-- Theme toggle button -->
-<div class="header-actions">
-  <a href="mailto:nixterra78@gmail.com" class="mail-link" aria-label="Email me">Email</a>
-  <a href="./notes/index.html" class="notes-link" aria-label="Notes">Notes</a>
+<body class="quarto-page dark">
+
+<!-- 🌙 Custom header nav -->
+<div class="header-left">
+  <a href="./projects/index.html">Projects</a>
+  <a href="./notes/index.html">Notes</a>
 </div>
 
+<div class="header-actions">
+  <a href="mailto:nixterra78@gmail.com" class="mail-link" aria-label="Email me">Email</a>
+</div>
 
-  <script>
-    const toggle = document.getElementById('theme-toggle');
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    const storedTheme = localStorage.getItem('theme');
-
-    if (storedTheme === 'dark' || (!storedTheme && prefersDark)) {
-      document.body.classList.add('dark');
-      toggle.checked = true;
-    }
-
-    toggle.addEventListener('change', function () {
-      if (this.checked) {
-        document.body.classList.add('dark');
-        localStorage.setItem('theme', 'dark');
-      } else {
-        document.body.classList.remove('dark');
-        localStorage.setItem('theme', 'light');
-      }
-    });
-  </script>
-
+<!-- Terminal-style box -->
   <a href="./" style="text-decoration: none;">
     <div class="terminal-box">
       <p>&gt; ← Home <span class="cursor"></span></p>
     </div>
   </a>
 
-<div class="header-left">
-  <a href="./projects/index.html">Projects</a>
-  <a href="./about.html">About</a>
-</div>
+<main><header id="title-block-header" class="quarto-title-block"></header>
+  <h2 id="about-this-site" class="anchored">About this site</h2>
+  <p>This site is about:</p>
+  <ul>
+  <li>being curious about how things work<br>
+  </li>
+  <li>finding stories in data, even small, messy, personal ones<br>
+  </li>
+  <li>using code to ask better questions<br>
+  </li>
+  <li>writing clearly instead of sounding smart<br>
+  </li>
+  <li>taking ideas apart and putting them back together<br>
+  </li>
+  <li>building a small habit of sharing what I learn</li>
+  </ul>
+  <p>Sometimes it’s a data project, sometimes it’s just a few notes from a book or experiment. The point isn’t to impress, it’s to understand.</p>
+  <hr>
+  <h2 id="about-me" class="anchored">About me</h2>
+  <p>I started out in content writing, but over time I grew more interested in the patterns behind the content: the data, the systems, the questions no one was asking.</p>
+  <p>Now I explore that space through small research projects, writing, and data analysis. Sometimes I write code to understand things better. Sometimes I write essays to slow down my thinking. Either way, this site is where I track that process.</p>
+  <hr>
+  <h3 id="what-i-work-with" class="anchored">What I work with</h3>
+  <ul>
+  <li>Python / Jupyter / Pandas</li>
+  <li>Quarto (obviously)</li>
+  <li>APIs, scraping, light automation</li>
+  <li>Text analysis, small-scale data research</li>
+  <li>Occasional zettelkasten-ish note structures</li>
+  <li>A healthy dose of curiosity</li>
+  </ul>
+  
+</main>
 
-  <main><header id="title-block-header" class="quarto-title-block"></header>
-    <h2 id="about-this-site" class="anchored">About this site</h2>
-    <p>This site is about:</p>
-    <ul>
-    <li>being curious about how things work<br>
-    </li>
-    <li>finding stories in data — even small, messy, personal ones<br>
-    </li>
-    <li>using code to ask better questions<br>
-    </li>
-    <li>writing clearly instead of sounding smart<br>
-    </li>
-    <li>taking ideas apart and putting them back together<br>
-    </li>
-    <li>building a small habit of sharing what I learn</li>
-    </ul>
-    <p>Sometimes it’s a data project, sometimes it’s just a few notes from a book or experiment. The point isn’t to impress, it’s to understand.</p>
-    <hr>
-    <h2 id="about-me" class="anchored">About me</h2>
-    <p>I started out in content writing, but over time I grew more interested in the patterns behind the content: the data, the systems, the questions no one was asking.</p>
-    <p>Now I explore that space through small research projects, writing, and data analysis. Sometimes I write code to understand things better. Sometimes I write essays to slow down my thinking. Either way, this site is where I track that process.</p>
-    <hr>
-    <h3 id="what-i-work-with" class="anchored">What I work with</h3>
-    <ul>
-    <li>Python / Jupyter / Pandas</li>
-    <li>Quarto (obviously)</li>
-    <li>APIs, scraping, light automation</li>
-    <li>Text analysis, small-scale data research</li>
-    <li>Occasional zettelkasten-ish note structures</li>
-    <li>A healthy dose of curiosity</li>
-    </ul>
-    
-  </main>
 <footer class="site-footer">
-          </footer>
+    </footer>
+
 
 </body></html>

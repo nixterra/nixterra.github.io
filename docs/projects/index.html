@@ -18,62 +18,43 @@
   
   </head>
 
-<body>
-  <!-- Theme toggle button -->
-<div class="header-actions">
-  <a href="mailto:nixterra78@gmail.com" class="mail-link" aria-label="Email me">Email</a>
-  <a href="../notes/index.html" class="notes-link" aria-label="Notes">Notes</a>
+<body class="quarto-page dark">
+
+<!-- 🌙 Custom header nav -->
+<div class="header-left">
+  <a href="../projects/index.html">Projects</a>
+  <a href="../notes/index.html">Notes</a>
 </div>
 
+<div class="header-actions">
+  <a href="mailto:nixterra78@gmail.com" class="mail-link" aria-label="Email me">Email</a>
+</div>
 
-  <script>
-    const toggle = document.getElementById('theme-toggle');
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    const storedTheme = localStorage.getItem('theme');
-
-    if (storedTheme === 'dark' || (!storedTheme && prefersDark)) {
-      document.body.classList.add('dark');
-      toggle.checked = true;
-    }
-
-    toggle.addEventListener('change', function () {
-      if (this.checked) {
-        document.body.classList.add('dark');
-        localStorage.setItem('theme', 'dark');
-      } else {
-        document.body.classList.remove('dark');
-        localStorage.setItem('theme', 'light');
-      }
-    });
-  </script>
-
+<!-- Terminal-style box -->
   <a href="../" style="text-decoration: none;">
     <div class="terminal-box">
       <p>&gt; ← Home <span class="cursor"></span></p>
     </div>
   </a>
 
-<div class="header-left">
-  <a href="../projects/index.html">Projects</a>
-  <a href="../about.html">About</a>
-</div>
+<main><header id="title-block-header" class="quarto-title-block"></header>
+  <p>Here’s a collection of my projects — each one started with curiosity and became a way to practice turning messy data into useful insight.</p>
+  <hr>
+  <h3 id="recent-projects" class="anchored">Recent Projects</h3>
+  <div class="highlight-list">
+  <div>
+  <a class="scribble-link" href="../projects/medium-analysis.html">Medium Reading Analysis</a>
+  </div>
+  </div>
+  <p>Explored ~1,800 Medium articles to understand patterns in claps, reading time, and responses. Built a reproducible analysis in Python and a summary report in Looker Studio.</p>
+  <p><strong>Skills:</strong> <code>pandas</code>, <code>matplotlib</code>, <code>seaborn</code>, <code>Quarto</code>, content strategy<br>
+  <strong>Findings:</strong> Articles 6–9 min long performed best; engagement peaked in Q1</p>
+  <hr>
+  
+</main>
 
-  <main><header id="title-block-header" class="quarto-title-block"></header>
-    <p>Here’s a collection of my projects — each one started with curiosity and became a way to practice turning messy data into useful insight.</p>
-    <hr>
-    <h3 id="recent-projects" class="anchored">Recent Projects</h3>
-    <div class="highlight-list">
-    <div>
-    <a class="highlight-item" href="../projects/medium-analysis.html">Medium Reading Analysis</a>
-    </div>
-    </div>
-    <p>Explored ~1,800 Medium articles to understand patterns in claps, reading time, and responses. Built a reproducible analysis in Python and a summary report in Looker Studio.</p>
-    <p><strong>Skills:</strong> <code>pandas</code>, <code>matplotlib</code>, <code>seaborn</code>, <code>Quarto</code>, content strategy<br>
-    <strong>Findings:</strong> Articles 6–9 min long performed best; engagement peaked in Q1</p>
-    <hr>
-    
-  </main>
 <footer class="site-footer">
-          </footer>
+    </footer>
+
 
 </body></html>

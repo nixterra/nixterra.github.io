@@ -18,77 +18,58 @@
   
   </head>
 
-<body>
-  <!-- Theme toggle button -->
-<div class="header-actions">
-  <a href="mailto:nixterra78@gmail.com" class="mail-link" aria-label="Email me">Email</a>
-  <a href="../notes/index.html" class="notes-link" aria-label="Notes">Notes</a>
+<body class="quarto-page dark">
+
+<!-- 🌙 Custom header nav -->
+<div class="header-left">
+  <a href="../projects/index.html">Projects</a>
+  <a href="../notes/index.html">Notes</a>
 </div>
 
+<div class="header-actions">
+  <a href="mailto:nixterra78@gmail.com" class="mail-link" aria-label="Email me">Email</a>
+</div>
 
-  <script>
-    const toggle = document.getElementById('theme-toggle');
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    const storedTheme = localStorage.getItem('theme');
-
-    if (storedTheme === 'dark' || (!storedTheme && prefersDark)) {
-      document.body.classList.add('dark');
-      toggle.checked = true;
-    }
-
-    toggle.addEventListener('change', function () {
-      if (this.checked) {
-        document.body.classList.add('dark');
-        localStorage.setItem('theme', 'dark');
-      } else {
-        document.body.classList.remove('dark');
-        localStorage.setItem('theme', 'light');
-      }
-    });
-  </script>
-
+<!-- Terminal-style box -->
   <a href="../" style="text-decoration: none;">
     <div class="terminal-box">
       <p>&gt; ← Home <span class="cursor"></span></p>
     </div>
   </a>
 
-<div class="header-left">
-  <a href="../projects/index.html">Projects</a>
-  <a href="../about.html">About</a>
-</div>
+<main><header id="title-block-header" class="quarto-title-block"></header>
+  <h1 id="hi-im-nina">👋 Hi, I’m Nina</h1>
+  <p>I’m a writer learning data — exploring how to make sense of things through small experiments, research, and reflection.</p>
+  <h2 id="projects" class="anchored">🧠 Projects</h2>
+  <h3 id="harry-potter-fanfiction-exploration" class="anchored">📈 Harry Potter Fanfiction Exploration</h3>
+  <p><strong>Description:</strong> Explored a large dataset of Harry Potter fanfiction using Python and visualized patterns in story popularity. Analyzed how word count relates to the number of favorites using log-log regression, correlation metrics, and binned averages.<br>
+  <strong>Skills used:</strong> Pandas, Matplotlib, Seaborn, Data Cleaning, EDA, Correlation Analysis, Log Transformation<br>
+  <a href="https://www.kaggle.com/code/niquienlit/harry-potter-fanfiction-and-pandas" target="_blank"> View project</a></p>
+  <h2 id="explorations" class="anchored">🔍 Explorations</h2>
+  <p>Ongoing reflections and mini-projects from my learning journey — sometimes data-driven, sometimes just trying to understand something better.</p>
+  <p>➡️ <a href="../explorations/">Visit Explorations</a></p>
+  <h2 id="tools-skills" class="anchored">💼 Tools &amp; Skills</h2>
+  <ul>
+  <li>Python (pandas, NumPy)</li>
+  <li>SQL (PostgreSQL, MySQL)</li>
+  <li>Excel &amp; Power Query</li>
+  <li>Tableau</li>
+  <li>statistics</li>
+  <li>Git &amp; GitHub</li>
+  </ul>
+  <h2 id="contact-me" class="anchored">📫 Contact Me</h2>
+  <ul>
+  <li>📧 <a href="mailto:tokmann.nina@gmail.com">Get in touch</a></li>
+  <li>🧠 <a href="[https://github.com/yourusername](https://github.com/nixterra)">Visit my GitHub</a></li>
+  <li>💼 <a href="https://www.linkedin.com/in/nina-tkmnn/">Connect on LinkedIn</a></li>
+  </ul>
+  <hr>
+  <p><em>Built with ❤️ using <a href="https://pages.github.com/">GitHub Pages</a> and the Minima theme.</em></p>
+  
+</main>
 
-  <main><header id="title-block-header" class="quarto-title-block"></header>
-    <h1 id="hi-im-nina">👋 Hi, I’m Nina</h1>
-    <p>I’m a writer learning data — exploring how to make sense of things through small experiments, research, and reflection.</p>
-    <h2 id="projects" class="anchored">🧠 Projects</h2>
-    <h3 id="harry-potter-fanfiction-exploration" class="anchored">📈 Harry Potter Fanfiction Exploration</h3>
-    <p><strong>Description:</strong> Explored a large dataset of Harry Potter fanfiction using Python and visualized patterns in story popularity. Analyzed how word count relates to the number of favorites using log-log regression, correlation metrics, and binned averages.<br>
-    <strong>Skills used:</strong> Pandas, Matplotlib, Seaborn, Data Cleaning, EDA, Correlation Analysis, Log Transformation<br>
-    <a href="https://www.kaggle.com/code/niquienlit/harry-potter-fanfiction-and-pandas" target="_blank"> View project</a></p>
-    <h2 id="explorations" class="anchored">🔍 Explorations</h2>
-    <p>Ongoing reflections and mini-projects from my learning journey — sometimes data-driven, sometimes just trying to understand something better.</p>
-    <p>➡️ <a href="../explorations/">Visit Explorations</a></p>
-    <h2 id="tools-skills" class="anchored">💼 Tools &amp; Skills</h2>
-    <ul>
-    <li>Python (pandas, NumPy)</li>
-    <li>SQL (PostgreSQL, MySQL)</li>
-    <li>Excel &amp; Power Query</li>
-    <li>Tableau</li>
-    <li>statistics</li>
-    <li>Git &amp; GitHub</li>
-    </ul>
-    <h2 id="contact-me" class="anchored">📫 Contact Me</h2>
-    <ul>
-    <li>📧 <a href="mailto:tokmann.nina@gmail.com">Get in touch</a></li>
-    <li>🧠 <a href="[https://github.com/yourusername](https://github.com/nixterra)">Visit my GitHub</a></li>
-    <li>💼 <a href="https://www.linkedin.com/in/nina-tkmnn/">Connect on LinkedIn</a></li>
-    </ul>
-    <hr>
-    <p><em>Built with ❤️ using <a href="https://pages.github.com/">GitHub Pages</a> and the Minima theme.</em></p>
-    
-  </main>
 <footer class="site-footer">
-          </footer>
+    </footer>
+
 
 </body></html>

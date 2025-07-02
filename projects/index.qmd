@@ -9,7 +9,7 @@ Here’s a collection of my projects — each one started with curiosity and bec
 ### Recent Projects
 
 <div class="highlight-list">
-  <div><a class="highlight-item" href="../projects/medium-analysis.html">Medium Reading Analysis</a></div>
+  <div><a class="scribble-link" href="../projects/medium-analysis.html">Medium Reading Analysis</a></div>
 </div>
 
 Explored ~1,800 Medium articles to understand patterns in claps, reading time, and responses. Built a reproducible analysis in Python and a summary report in Looker Studio.  

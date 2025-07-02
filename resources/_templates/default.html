@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap" rel="stylesheet">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Nina's Notebook">
@@ -13,43 +13,24 @@
 
   $if(highlighting-css)$
     <style type="text/css">
-    $highlighting-css$
+      $highlighting-css$
     </style>
   $endif$
 </head>
 
-<body>
-  <!-- Theme toggle button -->
-<div class="header-actions">
-  <a href="mailto:nixterra78@gmail.com" class="mail-link" aria-label="Email me">Email</a>
-  <a href="/notes/index.html" class="notes-link" aria-label="Notes">Notes</a>
+<body class="quarto-page dark">
+
+<!-- 🌙 Custom header nav -->
+<div class="header-left">
+  <a href="/projects/index.html">Projects</a>
+  <a href="/notes/index.html">Notes</a>
 </div>
 
-$if(site-navbar)$
-  $site-navbar$
-$endif$
+<div class="header-actions">
+  <a href="mailto:nixterra78@gmail.com" class="mail-link" aria-label="Email me">Email</a>
+</div>
 
-  <script>
-    const toggle = document.getElementById('theme-toggle');
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    const storedTheme = localStorage.getItem('theme');
-
-    if (storedTheme === 'dark' || (!storedTheme && prefersDark)) {
-      document.body.classList.add('dark');
-      toggle.checked = true;
-    }
-
-    toggle.addEventListener('change', function () {
-      if (this.checked) {
-        document.body.classList.add('dark');
-        localStorage.setItem('theme', 'dark');
-      } else {
-        document.body.classList.remove('dark');
-        localStorage.setItem('theme', 'light');
-      }
-    });
-  </script>
-
+<!-- Terminal-style box -->
 $if(home)$
   <a href="/" style="text-decoration: none;">
     <div class="terminal-box">
@@ -66,21 +47,18 @@ $else$
   </a>
 $endif$
 
-<div class="header-left">
-  <a href="/projects/index.html">Projects</a>
-  <a href="/about.html">About</a>
-</div>
+<main>
+  $body$
+</main>
 
-  <main>
-    $body$
-  </main>
 <footer class="site-footer">
-    $if(page-footer-left)$
-      <div class="footer-left">$page-footer-left$</div>
-    $endif$
-    $if(page-footer-right)$
-      <div class="footer-right">$page-footer-right$</div>
-    $endif$
-  </footer>
+  $if(page-footer-left)$
+    <div class="footer-left">$page-footer-left$</div>
+  $endif$
+  $if(page-footer-right)$
+    <div class="footer-right">$page-footer-right$</div>
+  $endif$
+</footer>
+
 </body>
 </html>
