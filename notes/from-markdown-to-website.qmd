@@ -8,4 +8,4 @@ Here’s a summary of how I built my personal website using Quarto — no coding
 Quarto allowed me to convert my Markdown notes into a beautiful website easily, combining reproducible content and minimal setup. This method helped me focus on content while maintaining professional web presence.
 
 For the full article, check it out on Medium:  
-[Read on Medium »](https://medium.com/@nixterra/from-markdown-to-website-how-i-used-quarto-to-build-my-site-without-coding-9c7ea3deea3b){.minimal-link target="_blank" rel="noopener noreferrer"}
+[Read on Dev.to »](https://dev.to/nixterra/how-i-got-a-site-online-with-quarto-mostly-writing-in-markdown-1ana){.minimal-link target="_blank" rel="noopener noreferrer"}
