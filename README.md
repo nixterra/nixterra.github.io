@@ -1,5 +1,5 @@
 # Personal Portfolio
-This is the source code for my personal website, built with [Quarto](https://quarto.org/) and hosted via GitHub Pages.
+This is the source code for my personal website, built with [Quarto](https://quarto.org/) and some tears. Hosted via GitHub Pages.
 
 **🔗 Live site:** [nixterra.github.io](https://nixterra.github.io)
 
