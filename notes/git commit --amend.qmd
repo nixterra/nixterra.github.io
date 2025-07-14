@@ -12,5 +12,5 @@ Use `git commit --amend` to **modify your most recent commit**. It's helpful whe
 
 ### Example
 
-```bash
+```{bash}
 git commit --amend --reset-author

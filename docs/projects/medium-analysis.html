@@ -115,7 +115,7 @@
   <hr>
   <h3 id="analysis-summary-python" class="anchored">Analysis Summary (Python)</h3>
   <p>To start the analysis, I loaded the dataset and imported key libraries used for data wrangling and visualization:</p>
-  <div id="818de8f5" class="cell" data-execution_count="1">
+  <div id="b5431916" class="cell" data-execution_count="1">
   <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
@@ -132,13 +132,13 @@
   <li>Filtering out articles with zero claps</li>
   <li>Calculating a new feature: <strong>claps per minute of reading time</strong></li>
   </ul>
-  <div id="ca20dc15" class="cell" data-execution_count="2">
+  <div id="60376573" class="cell" data-execution_count="2">
   <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>df[<span class="st">'date'</span>] <span class="op">=</span> pd.to_datetime(df[<span class="st">'date'</span>], dayfirst<span class="op">=</span><span class="va">True</span>)</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> df[df[<span class="st">'claps'</span>] <span class="op">&gt;</span> <span class="dv">0</span>].copy()</span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>df[<span class="st">'claps_per_min'</span>] <span class="op">=</span> df[<span class="st">'claps'</span>] <span class="op">/</span> df[<span class="st">'reading_time'</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
   </div>
   <h3 id="descriptive-stats" class="anchored">Descriptive Stats</h3>
-  <div id="ae01c958" class="cell" data-execution_count="3">
+  <div id="9a6de5bb" class="cell" data-execution_count="3">
   <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>df[[<span class="st">'claps'</span>, <span class="st">'reading_time'</span>, <span class="st">'responses'</span>]].describe()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
   <div class="cell-output cell-output-display" data-execution_count="3">
   <div>
@@ -222,7 +222,7 @@
   </div>
   <h3 id="visualizing-distributions" class="anchored">Visualizing Distributions</h3>
   <p>To understand the general spread and outliers in the dataset, I visualized the distributions of claps, reading time, and responses using boxplots. This helped surface skewed engagement patterns and typical article behavior.</p>
-  <div id="810591c7" class="cell" data-execution_count="4">
+  <div id="30d8469c" class="cell" data-execution_count="4">
   <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">15</span>, <span class="dv">5</span>))</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Claps</span></span>

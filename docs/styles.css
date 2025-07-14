@@ -369,3 +369,17 @@ body.dark .contact-form button {
   background-color: #f2e39b;
   color: #1c1c1c;
 }
+
+/* Compact version for note lists */
+.highlight-list.compact-list {
+  gap: 0.2rem;
+  margin: 1rem 0;
+}
+.highlight-list.compact-list div {
+  padding: 0.15rem 0;
+}
+.highlight-list.compact-list div::before {
+  content: "• ";
+  margin-right: 0.3rem;
+  color: #aaa;
+}

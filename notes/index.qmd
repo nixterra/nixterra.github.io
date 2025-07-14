@@ -6,10 +6,7 @@ This is a growing pile of notes: on books, ideas, questions, or odd patterns Iâ€
 
 ### Recent Notes
 
-<div class="highlight-list">
+<div class="highlight-list compact-list">
   <div><a class="scribble-link" href="from-markdown-to-website.qmd">From Markdown to Website: How I Used Quarto to Build My Site Without Coding</a></div>
-</div>
-
-<div class="highlight-list">
   <div><a class="scribble-link" href="git commit --amend.qmd">Amend git comment</a></div>
 </div>
