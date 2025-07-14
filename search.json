@@ -11,7 +11,7 @@
     "href": "notes/git commit --amend.html",
     "title": "Nina's Notes",
     "section": "",
-    "text": "Git Commit Amend (Quick Note)\n  Use git commit --amend to modify your most recent commit. It’s helpful when you need to:\n  \n  Fix a commit message\n  Add or remove files from the last commit\n  Update the commit author information\n  \n  Example\n  ```bash git commit –amend –reset-author"
+    "text": "Git Commit Amend (Quick Note)\n  Use git commit --amend to modify your most recent commit. It’s helpful when you need to:\n  \n  Fix a commit message\n  Add or remove files from the last commit\n  Update the commit author information\n  \n  Example\n  git commit –amend –reset-author"
   },
   {
     "objectID": "about.html",
