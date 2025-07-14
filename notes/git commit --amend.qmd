@@ -1,0 +1,16 @@
+---
+title: "Git Commit Amend – Quick Note"
+---
+
+## Git Commit Amend (Quick Note)
+
+Use `git commit --amend` to **modify your most recent commit**. It's helpful when you need to:
+
+- Fix a commit message
+- Add or remove files from the last commit
+- Update the commit author information
+
+### Example
+
+```bash
+git commit --amend --reset-author

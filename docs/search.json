@@ -11,7 +11,7 @@
     "href": "notes/index.html",
     "title": "Nina's Notes",
     "section": "",
-    "text": "This is a growing pile of notes: on books, ideas, questions, or odd patterns I’ve come across.\n  Recent Notes\n  \n  \n  From Markdown to Website: How I Used Quarto to Build My Site Without Coding\n  \n  \n  A walkthrough of how I built my personal website using Quarto — no coding required. Shares insights on converting Markdown notes into a polished site and the benefits of using Quarto as a content tool."
+    "text": "This is a growing pile of notes: on books, ideas, questions, or odd patterns I’ve come across.\n  Recent Notes\n  \n  \n  From Markdown to Website: How I Used Quarto to Build My Site Without Coding\n  \n  \n  \n  \n  Amend git comment"
   },
   {
     "objectID": "index.html",
@@ -47,5 +47,12 @@
     "title": "Nina's Notes",
     "section": "",
     "text": "From Markdown to Website: How I Used Quarto to Build My Site Without Coding\n  Here’s a summary of how I built my personal website using Quarto — no coding required.\n  Quarto allowed me to convert my Markdown notes into a beautiful website easily, combining reproducible content and minimal setup. This method helped me focus on content while maintaining professional web presence.\n  For the full article, check it out on Medium:\n  Read on Dev.to »"
+  },
+  {
+    "objectID": "notes/git commit --amend.html",
+    "href": "notes/git commit --amend.html",
+    "title": "Nina's Notes",
+    "section": "",
+    "text": "Git Commit Amend (Quick Note)\n  Use git commit --amend to modify your most recent commit. It’s helpful when you need to:\n  \n  Fix a commit message\n  Add or remove files from the last commit\n  Update the commit author information\n  \n  Example\n  ```bash git commit –amend –reset-author"
   }
 ]
